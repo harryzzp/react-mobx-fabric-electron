@@ -1,0 +1,44 @@
+{
+  "main": "main.js",
+  "homepage": ".",
+  "name": "react-mobx-fabric-electron",
+  "DEV": true,
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "mobx": "^5.9.0",
+    "mobx-react": "^5.4.3",
+    "mobx-react-devtools": "^6.1.1",
+    "office-ui-fabric-react": "^6.154.0",
+    "react": "^16.8.4",
+    "react-app-rewire-mobx": "^1.0.9",
+    "react-dom": "^16.8.4",
+    "react-scripts": "2.1.8"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test --env=jsdom",
+    "eject": "react-scripts eject",
+    "estart": "electron .",
+    "package": "electron-packager ./ demo --overwrite --asar --arch=x64 --prune=true --out=dist --ignore=\"(dist|public|src|package-lock.json|yarn.lock|.gitignore|README.md|config-overrides.js|node_modules)\""
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.3.0",
+    "babel-plugin-import": "^1.11.0",
+    "customize-cra": "^0.2.12",
+    "electron": "^4.0.8",
+    "electron-packager": "^13.1.1",
+    "less-loader": "^4.1.0",
+    "react-app-rewired": "^2.1.1"
+  }
+}
