@@ -1,4 +1,5 @@
 const rewireMobX = require('react-app-rewire-mobx');
+const rewireReactHotLoader = require('react-app-rewire-hot-loader');
 const {
   override,
   fixBabelImports,
@@ -9,6 +10,7 @@ const {
 /* config-overrides.js */
 module.exports = function override(config, env) {
   config = rewireMobX(config, env);
+  config = rewireReactHotLoader(config, env);
   config = injectBabelPlugin(["@babel/plugin-proposal-decorators", { legacy: true }], config);
   return config;
 }

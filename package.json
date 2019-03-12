@@ -19,7 +19,7 @@
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test --env=jsdom",
-    "eject": "react-scripts eject",
+    "eject": "react-app-rewired eject",
     "estart": "electron .",
     "package": "electron-packager ./ react-mobx-fabric-electron --overwrite --asar --arch=x64 --prune=true --out=dist --ignore=\"(dist|public|src|package-lock.json|yarn.lock|.gitignore|README.md|config-overrides.js|node_modules)\""
   },
@@ -39,6 +39,8 @@
     "electron": "^4.0.8",
     "electron-packager": "^13.1.1",
     "less-loader": "^4.1.0",
-    "react-app-rewired": "^2.1.1"
+    "react-app-rewire-hot-loader": "^2.0.1",
+    "react-app-rewired": "^2.1.1",
+    "react-hot-loader": "^4.8.0"
   }
 }

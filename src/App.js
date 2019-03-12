@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { hot } from 'react-hot-loader';
 import './App.css';
 import { PrimaryButton } from 'office-ui-fabric-react/lib/Button';
 import { observer , inject } from 'mobx-react'
@@ -18,4 +19,5 @@ class App extends Component {
   }
 }
 
-export default App;
+// export default App;
+export default process.env.NODE_ENV === "development" ? hot(module)(App) : App
