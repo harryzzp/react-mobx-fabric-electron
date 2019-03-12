@@ -21,7 +21,7 @@
     "test": "react-app-rewired test --env=jsdom",
     "eject": "react-scripts eject",
     "estart": "electron .",
-    "package": "electron-packager ./ demo --overwrite --asar --arch=x64 --prune=true --out=dist --ignore=\"(dist|public|src|package-lock.json|yarn.lock|.gitignore|README.md|config-overrides.js|node_modules)\""
+    "package": "electron-packager ./ react-mobx-fabric-electron --overwrite --asar --arch=x64 --prune=true --out=dist --ignore=\"(dist|public|src|package-lock.json|yarn.lock|.gitignore|README.md|config-overrides.js|node_modules)\""
   },
   "eslintConfig": {
     "extends": "react-app"
